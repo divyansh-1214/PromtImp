@@ -1,7 +1,6 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Progress } from "@/components/ui/progress";
 import type { PromptScore as Score } from "@/lib/promptEnhancer";
-import { Target, Search, CheckCircle, Award, TrendingUp } from "lucide-react";
+import { Target, Search, CheckCircle, Award } from "lucide-react";
 
 interface PromptScoreProps {
   score: Score;

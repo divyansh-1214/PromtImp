@@ -36,11 +36,11 @@ const Index = () => {
     setIsEnhancing(true);
     setTimeout(() => {
       const enhanced = enhancePrompt(prompt, useCase, tone, format);
+      console.log(enhanced);
       setResult(enhanced);
       setIsEnhancing(false);
     }, 600);
   }, [prompt, useCase, tone, format]);
-
   const handleSave = useCallback(() => {
     if (!result || !prompt.trim()) return;
     addToHistory({
@@ -82,9 +82,7 @@ const Index = () => {
         <div className="absolute top-1/2 -left-40 w-80 h-80 bg-primary/5 rounded-full blur-3xl" />
         <div className="absolute -bottom-40 right-1/3 w-80 h-80 bg-primary/3 rounded-full blur-3xl" />
       </div>
-
       <Header />
-
       <main className="container mx-auto px-4 py-8 relative">
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
           {/* Main Content */}
@@ -100,7 +98,6 @@ const Index = () => {
                 onToneChange={setTone}
                 onFormatChange={setFormat}
               />
-
               <div
                 className="flex flex-col sm:flex-row gap-4 items-start sm:items-center justify-between animate-fade-in"
                 style={{ animationDelay: "0.2s" }}
