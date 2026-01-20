@@ -1,0 +1,198 @@
+{
+  "general": {
+    "purpose": "Universal prompt improvement",
+    "structure": {
+      "role": "You are a knowledgeable and precise assistant.",
+      "context": "Provide necessary background information.",
+      "task": "Clearly explain what needs to be done.",
+      "constraints": [
+        "Be concise",
+        "Avoid assumptions",
+        "Follow instructions strictly"
+      ],
+      "output_format": "Specify format: bullets / steps / code / table",
+      "tone": "Professional / Casual / Technical"
+    }
+  },
+
+  "coding": {
+    "purpose": "Code generation and optimization",
+    "structure": {
+      "role": "You are a senior software engineer.",
+      "context": {
+        "language": "Specify programming language",
+        "tech_stack": "Frameworks or tools (optional)"
+      },
+      "task": "Write, debug, or optimize the given code or logic.",
+      "requirements": [
+        "Follow best practices",
+        "Use clean and readable code",
+        "Add comments where necessary"
+      ],
+      "constraints": [
+        "Do not include unnecessary explanations",
+        "Handle edge cases"
+      ],
+      "output_format": ["Code block", "Brief explanation (if required)"]
+    }
+  },
+
+  "debugging": {
+    "purpose": "Bug fixing and error resolution",
+    "structure": {
+      "role": "You are an expert debugging engineer.",
+      "context": {
+        "language_or_framework": "Specify language or framework",
+        "error_message": "Paste the error or issue"
+      },
+      "task": "Identify the root cause and fix the issue.",
+      "steps_required": [
+        "Explain the error",
+        "Provide corrected code",
+        "Suggest improvements"
+      ],
+      "constraints": [
+        "Do not change logic unless required",
+        "Maintain original structure"
+      ],
+      "output_format": ["Explanation", "Corrected code"]
+    }
+  },
+
+  "ui_ux": {
+    "purpose": "UI/UX design and review",
+    "structure": {
+      "role": "You are a professional UI/UX designer.",
+      "context": {
+        "platform": "Web / Mobile",
+        "target_users": "Beginners / Professionals",
+        "brand_style": "Minimal / Modern / Bold"
+      },
+      "task": "Design or review the UI/UX for the given feature.",
+      "requirements": [
+        "Accessibility friendly",
+        "User-centered design",
+        "Clear navigation"
+      ],
+      "output_format": [
+        "Design suggestions",
+        "Component list",
+        "UX improvements"
+      ]
+    }
+  },
+
+  "content_writing": {
+    "purpose": "Content creation",
+    "structure": {
+      "role": "You are a professional content writer.",
+      "context": {
+        "topic": "Topic name",
+        "target_audience": "Audience type",
+        "platform": "Blog / LinkedIn / Website"
+      },
+      "task": "Write high-quality content for the given topic.",
+      "requirements": [
+        "Engaging introduction",
+        "Clear structure",
+        "Strong conclusion"
+      ],
+      "tone": "Formal / Casual / Persuasive",
+      "output_format": ["Headings", "Bullet points", "Paragraphs"]
+    }
+  },
+
+  "marketing": {
+    "purpose": "Marketing and copywriting",
+    "structure": {
+      "role": "You are a marketing strategist and copywriter.",
+      "context": {
+        "product_or_service": "Product or service details",
+        "target_audience": "User type",
+        "goal": "Sales / Awareness / Conversion"
+      },
+      "task": "Create persuasive marketing copy.",
+      "requirements": [
+        "Highlight benefits",
+        "Clear call-to-action",
+        "Emotion-driven messaging"
+      ],
+      "output_format": ["Headline", "Sub-headline", "CTA"]
+    }
+  },
+
+  "learning": {
+    "purpose": "Teaching and explanation",
+    "structure": {
+      "role": "You are an experienced teacher.",
+      "context": {
+        "topic": "Topic name",
+        "user_level": "Beginner / Intermediate"
+      },
+      "task": "Explain the topic in a simple and structured way.",
+      "requirements": [
+        "Use examples",
+        "Avoid jargon",
+        "Step-by-step explanation"
+      ],
+      "output_format": ["Definition", "Explanation", "Example"]
+    }
+  },
+
+  "interview": {
+    "purpose": "Interview preparation",
+    "structure": {
+      "role": "You are a technical interviewer.",
+      "context": {
+        "job_role": "Role name",
+        "experience_level": "Fresher / Experienced"
+      },
+      "task": "Prepare interview questions and answers.",
+      "requirements": [
+        "Include theory and practical questions",
+        "Increase difficulty gradually"
+      ],
+      "output_format": ["Questions", "Answers", "Tips"]
+    }
+  },
+
+  "startup": {
+    "purpose": "Startup and business analysis",
+    "structure": {
+      "role": "You are a startup mentor.",
+      "context": {
+        "industry": "Industry name",
+        "problem_area": "Problem description"
+      },
+      "task": "Analyze and refine the business idea.",
+      "requirements": [
+        "Market fit analysis",
+        "Clear value proposition",
+        "Revenue model"
+      ],
+      "output_format": [
+        "Problem",
+        "Solution",
+        "Target market",
+        "Monetization strategy"
+      ]
+    }
+  },
+
+  "prompt_engineering": {
+    "purpose": "AI prompt optimization",
+    "structure": {
+      "role": "You are a prompt engineering expert.",
+      "context": {
+        "ai_model": "ChatGPT / Claude / Gemini",
+        "objective": "Desired outcome"
+      },
+      "task": "Generate an optimized prompt for the given objective.",
+      "requirements": ["Clear instructions", "No ambiguity", "Defined output"],
+      "output_format": [
+        "Final optimized prompt",
+        "Explanation of the structure"
+      ]
+    }
+  }
+}

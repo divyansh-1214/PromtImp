@@ -1,8 +1,8 @@
 const express = require("express");
 const dotenv = require("dotenv");
-// const reumneR = require("./routes/resumeR");
-// const leetcode = require("./routes/leetcode");
+const { gemini, meta } = require("./function/ai");
 // // const serverless = require('serverless-http');
+
 const cors = require("cors"); // Add this line
 dotenv.config();
 const connectDB = require("./db/db");
@@ -15,10 +15,8 @@ app.use(cors({ origin: furl })); // Add this line
 app.get("/", (req, res) => {
   res.send("API is running 🚀");
 });
-// app.use("/api", reumneR);
-// app.use("/leetcode", leetcode);
 app.use("/user", require("./routes/userRoutes"));
-// // Upload PDF endpoint
+// app.use("/ai", require("./routes/"));
 connectDB();
 const port = process.env.PORT || 5000;
 app.listen(port, () => {

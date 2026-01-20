@@ -1,0 +1,22 @@
+{
+  "professional": {
+    "style": "Maintain a competent, business-focused, and confident voice. The tone should be polite but efficient, suitable for a corporate environment.",
+    "rules": "1. **Language**: Standard business English (no slang, no obscure words).\n2. **Tone**: Objective and solution-oriented.\n3. **Formatting**: Clean paragraphs with clear headings.\n4. **Constraint**: Avoid being overly emotional or using excessive exclamation points."
+  },
+  "casual": {
+    "style": "Adopt a friendly, conversational, and approachable voice. Write as if you are speaking to a peer or a friend over coffee.",
+    "rules": "1. **Language**: Simple, everyday vocabulary. \n2. **Tone**: Warm and engaging.\n3. **Flexibility**: Contractions (e.g., 'don't', 'it's') are encouraged.\n4. **Constraint**: You may use emojis where appropriate, but keep it readable."
+  },
+  "formal": {
+    "style": "Use a dignified, academic, or diplomatic voice. The tone must be respectful, serious, and intellectually rigorous.",
+    "rules": "1. **Language**: Sophisticated vocabulary and precise terminology.\n2. **Grammar**: Strict adherence to grammar rules; NO contractions.\n3. **Structure**: Complete sentences and well-formed paragraphs.\n4. **Constraint**: Avoid first-person pronouns ('I', 'me') unless explicitly asked."
+  },
+  "creative": {
+    "style": "Use an evocative, engaging, and narrative-driven voice. Focus on sensory details, storytelling, and emotional resonance.",
+    "rules": "1. **Language**: Use strong verbs and vivid adjectives.\n2. **Rhetoric**: Employ metaphors, similes, and analogies.\n3. **Flow**: Vary sentence length for rhythm.\n4. **Constraint**: Avoid clichés and generic corporate speak. 'Show, don't tell'."
+  },
+  "technical": {
+    "style": "Use a precise, instructional, and objective voice. Prioritize factual accuracy and clarity over style or emotion.",
+    "rules": "1. **Language**: Use domain-specific jargon and industry-standard acronyms correctly.\n2. **Tone**: Dry, direct, and unambiguous.\n3. **Detail**: Explicitly state versions, units of measurement, and parameters.\n4. **Constraint**: Avoid fluff, filler words, or conversational pleasantries."
+  }
+}
