@@ -13,17 +13,18 @@ import {
   Copy,
   BrainCircuit,
 } from "lucide-react";
-
+import LoginButton from "@/loginButton";
+import LogoutButton from "@/logoutButton";
+import { useAuth0 } from "@auth0/auth0-react";
 const Landing = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
-
   // Interactive Demo State
   const [demoInput, setDemoInput] = useState("Write code for a snake game");
   const [demoOutput, setDemoOutput] = useState("");
   const [isOptimizing, setIsOptimizing] = useState(false);
   const [hasOptimized, setHasOptimized] = useState(false);
-
+  const { user, isAuthenticated, isLoading } = useAuth0();
   // Handle scroll effect for navbar
   useEffect(() => {
     const handleScroll = () => {
@@ -80,7 +81,7 @@ const Landing = () => {
                 Testimonials
               </a>
               <button className="text-sm font-medium px-5 py-2.5 rounded-full bg-white/10 hover:bg-white/20 border border-white/10 transition-all">
-                Log In
+                {<LoginButton />}
               </button>
               <button className="text-sm font-medium px-5 py-2.5 rounded-full bg-indigo-600 hover:bg-indigo-500 text-white shadow-lg shadow-indigo-500/25 transition-all">
                 Get Started
