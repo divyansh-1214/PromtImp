@@ -15,7 +15,7 @@
     "style": "Use an evocative, engaging, and narrative-driven voice. Focus on sensory details, storytelling, and emotional resonance.",
     "rules": "1. **Language**: Use strong verbs and vivid adjectives.\n2. **Rhetoric**: Employ metaphors, similes, and analogies.\n3. **Flow**: Vary sentence length for rhythm.\n4. **Constraint**: Avoid clichés and generic corporate speak. 'Show, don't tell'."
   },
-  "technical": {
+  "academic": {
     "style": "Use a precise, instructional, and objective voice. Prioritize factual accuracy and clarity over style or emotion.",
     "rules": "1. **Language**: Use domain-specific jargon and industry-standard acronyms correctly.\n2. **Tone**: Dry, direct, and unambiguous.\n3. **Detail**: Explicitly state versions, units of measurement, and parameters.\n4. **Constraint**: Avoid fluff, filler words, or conversational pleasantries."
   }

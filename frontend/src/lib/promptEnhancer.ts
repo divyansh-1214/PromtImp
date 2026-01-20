@@ -1,5 +1,5 @@
 // Prompt Enhancement Engine - Client-side algorithms
-
+import axios from "axios";
 export type UseCase =
   | "coding"
   | "academic"
@@ -9,11 +9,11 @@ export type UseCase =
   | "startup"
   | "ai-prompting";
 export type Tone =
-  | "formal"
-  | "casual"
-  | "academic"
   | "professional"
-  | "creative";
+  | "casual"
+  | "formal"
+  | "creative"
+  | "academic";
 export type OutputFormat = "bullets" | "steps" | "long" | "short" | "code";
 
 export interface PromptScore {
@@ -229,6 +229,26 @@ export function enhancePrompt(
   tone: Tone,
   format: OutputFormat,
 ): EnhancementResult {
+  axios
+    .post(`http://localhost:5000/enhance`, {
+      original: original,
+      useCase: useCase,
+      tone: tone,
+      format: format,
+      nodel: "",
+    })
+    .then(function (response) {
+      // handle success
+      console.log(response);
+    })
+    .catch(function (error) {
+      // handle error
+      console.log(error);
+    })
+    .finally(function () {
+      // always executed
+    });
+  // i will send the orgnal, usecases and the tone to backend then i will get the respnese by calling the api
   if (!original.trim()) {
     return {
       improved: "",

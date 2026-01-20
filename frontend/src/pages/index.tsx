@@ -10,6 +10,7 @@ import { TemplateLibrary } from "@/components/TemplateLibrary";
 import { ExportActions } from "@/components/ExportActions";
 import { Button } from "@/components/ui/button";
 import { usePromptHistory } from "@/hooks/usePromptHistory";
+import axios from "axios";
 import type {
   UseCase,
   Tone,
@@ -36,7 +37,6 @@ const Index = () => {
     setIsEnhancing(true);
     setTimeout(() => {
       const enhanced = enhancePrompt(prompt, useCase, tone, format);
-      console.log(enhanced);
       setResult(enhanced);
       setIsEnhancing(false);
     }, 600);
